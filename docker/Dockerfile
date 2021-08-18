@@ -40,3 +40,10 @@ RUN apt-get install -y python3-pip
 RUN pip3 install \
     uvicorn \
     fastapi
+
+WORKDIR /data
+WORKDIR /opt/src
+COPY app.py /opt/src/
+COPY app.sh /opt/src/
+
+EXPOSE 8000

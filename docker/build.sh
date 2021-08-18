@@ -1,3 +1,4 @@
 #! /bin/bash
 IMAGE="fast-api"
-sudo docker build -t ${IMAGE} -f Dockerfile .
+cd ..
+sudo docker build -t ${IMAGE} -f docker/Dockerfile .
